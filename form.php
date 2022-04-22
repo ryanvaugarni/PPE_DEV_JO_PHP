@@ -16,12 +16,12 @@
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>Contactez nous</h1>
+        <h1>Inscription</h1>
 </header>
 <main>
     <section>
         <br>
-        <h2>Prêt à regarder? Remplissez le formulaire proposé dans cette page</h2>
+        <h2>Vous êtes tombé sur la bonne page l'inscription se passe tout en bas </h2>
         <br>
         <p>Tous les mois profitez de toutes les nouveauts série et cinéma. A partir du mois
             prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
@@ -79,16 +79,17 @@
         <br>
     </article>
         <form method="post" class="container"> 
-            <h3>Formulaire de contact</h3>
+            <h3>Formulaire d'inscription</h3>
             <?php include_once ('connexion_bdd.php'); ?>
             <br>
             <p class="warning"></p>
 
             <div class="form-element" role="form">
-            <input type="nom" name="nom" class="floating-label" placeholder="Nom" aria-required="true">
-            <input type="prenom" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
-            <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
-            <select type="pays" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
+            <input type="text" name="nom" class="floating-label" placeholder="Nom" aria-required="true">
+            <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
+            <input type="text" name="email" class="floating-label" placeholder="Email" aria-required="true">
+            <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
                 <option>Pays</option>
                 <option>France</option>
                 <option>Italie</option>
@@ -96,7 +97,7 @@
                 <option>Chine</option>
                 <option>Espagne</option> 
             </select>
-            <select type="ville" name="ville" class="floating-label" placeholder="ville" aria-required="true">
+            <select type="text" name="ville" class="floating-label" placeholder="ville" aria-required="true">
                 <option>Ville</option>
                 <option>Paris</option>
                 <option>Milan</option>

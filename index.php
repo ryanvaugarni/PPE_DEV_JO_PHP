@@ -24,7 +24,11 @@
             <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
             <br>
             <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
-                prochain on vous propose toutes les séance de sport sur vos support préférés</p>
+                prochain on vous propose tous les sports qui seront diffusés pendant les JO de Paris 2024 sur vos support préférés
+                <br>
+                <br>
+            Alors ne tardez plus inscrivez-vous !
+            </p>
         </section>
         <br>
         <ul class="grid-picture-large">
