@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:ital,wght@1,300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Ubuntu&display=swap');
+/* reset css */
+    html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to top, rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.3) 50%), url(../asset/bg.png) no-repeat center center fixed;
+    }
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-default: rgb(250, 240, 240);
+    --color-primary: #2b7dc0;
+    --color-warning: #e23131;
+    --color-success: #4db32e;
+}
+button,input,select{
+    padding:0;
+    border:0;
+    background-color:transparent;
+    font-size: inherit;
+}
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #222 #333;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+/* thème */
+header{
+    display: flex;
+    border: rgb(255, 252, 252);
+    align-items: center;
+    justify-content: center;
+    background-color: #eae9e9ce;
+}
+header img{
+    position: absolute;
+    left: 10rem;
+}
+header h1{
+    text-align: center;
+    padding: 3rem;
+    border: transparent;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+header img{
+    max-width: 14rem;
+    display: block;
+    transform: translateX(-5rem);
+
+} 
+main section h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 4rem;
+}
+main p{
+    padding: 3rem;
+    text-align: center;
+    border: solid .1rem var(--color-default);
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: #303030;
+}
+main{
+    margin: 0 auto;
+}
+main .grid-picture-large{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem auto;
+    max-width: 85rem;   
+    gap: 2rem;
+}
+main ul img{
+    border-radius: 1rem;
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+    border: solid .1rem #fff;
+}
+main ul li{
+    text-align: center;
+}
+ul figure{
+    position: relative;
+}
+ul figure .material-icons{
+    vertical-align: -.4rem;
+}
+/* Overley effect */
+ul figure figcaption{
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    transform: scale(0);
+    transition: all 500ms ease-in-out;
+    transform-origin: center center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+ul figure:hover figcaption{
+    transform: scale(1);
+}
+/* MODALE */
+.parent-modale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.parent-modale .modale{
+    max-width: 80rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    z-index: 2;
+    cursor: pointer;
+}
+.parent-modale .modale .desc{
+    position: static;
+    transition: none;
+    background-color: #fff;
+    color: #222;
+    
+}
+div figure img{
+    display: block;
+    width: 40rem;
+    height: 60rem;
+}
+.modale-active{
+    z-index: 1;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+}
+.parent-modale .modale .desc p :is(time){
+    padding: 1rem;
+}
+.parent-modale .modale button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: rgb(248, 247, 247);
+    cursor: pointer;
+}
+main a{
+    padding: 2rem;
+    background-color: #6599CC;
+    margin: 1rem auto;
+    display: block;
+    max-width: 25rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+main button{
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+    background-color: #6599CC;
+    border-radius: 1rem;
+}
+main a:hover{
+    background-color: #4991d9;
+}
+footer p{
+    text-align: center;
+}
+/* PAGE FORM*/
+.warning{
+    display: none;
+    color: var(--color-warning);
+}
+.success{
+    padding: 3rem;
+    text-align: center;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(64, 112, 59);
+    border-radius: 1rem;
+    background-color: #292929;
+}
+.return{
+    padding: 1rem;
+    width: 10rem;
+    margin-bottom: 3rem;
+}
+.container{
+    position: relative;
+    display: block;
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 1.6rem;
+    background-color: #292929;
+    color: #ffffff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.container .form-element {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    display: block;
+    width: 100%;
+   }
+.form-element input, select{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: inherit;
+    padding: 1rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #444444;
+    color: #ffffff;
+   }
+input, select{
+    margin-bottom: 3rem;
+   }
+.btn-sign-in{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2.4rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    color: #ffffff;
+    background-color: #6599CC;
+   }
+.container input[type="submit"]{
+    width: 100%;
+    margin-top: 2.4rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    color: #ffffff;
+    background-color: #6599CC;
+    line-height: 2.5rem;
+}
+.container input[type="submit"]:hover{
+    background-color: #4991d9;
+}
+h3{
+    text-align: center;
+}
+option{
+    color: #444444;
+}
+footer{
+    margin-top: 2rem;
+    background-color: #303030;
+    padding: 2rem;
+}
+footer p{
+    color: #fff;
+}
+@media screen and (max-width: 60rem) {
+       header img{
+            position: absolute;
+            top: 3rem;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            width: 20rem;
+        }
+        header{
+            font-weight: 1rem;
+            display: block;
+            margin: 10rem auto;
+        }
+        main .grid-picture-large{
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+        }
+        main section h2{
+            text-align: center;
+            color: #fff;
+            margin-top: -8rem;
+            font-size: 2rem;
+        }
+        div figure img{
+            display: block;
+            width: 27rem;
+            height: 35rem;
+        }
+        main ul img{
+            width: 35rem;
+            height: 52rem;
+            gap: 5rem;
+        }
+        ul li{
+            width: 35rem;
+            margin: 0 auto;
+        }
+        main p{
+            width: 100%;
+        }
+    }
+    @media screen and (orientation:landscape) and (max-width: 63rem){
+        main .grid-picture-large{
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            gap: 3rem;
+        }
+        main ul img{
+            width: 34rem;
+            height: 52rem;
+        }
+        div figure img{
+            width: 20rem;
+            height: 25rem;
+        }
+    }
