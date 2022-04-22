@@ -37,6 +37,9 @@
                         {
                             $_bdd->exec("INSERT INTO `formulaire`(prenom, nom, email, mdp, pays, ville) VALUES ('$_prenom', '$_nom', '$_email', '$_password', '$_pays', '$_ville')");
                             print "<p class=\"success\"> Votre inscription a bien été prise en compte </p>";
+                            sleep(3);
+                            header('Location: login.php');
+
                         }
                     }  
                 }

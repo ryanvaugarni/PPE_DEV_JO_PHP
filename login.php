@@ -16,7 +16,7 @@
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>JO - Inscription</h1>
+        <h1>JO - Connexion</h1>
 </header>
 <main>
     <section>
@@ -79,33 +79,15 @@
         <br>
     </article>
         <form method="post" class="container"> 
-            <h3>Formulaire d'inscription</h3>
-            <?php include_once ('./src/connexion_bdd.inc.php'); ?>
+            <h3>Connexion</h3>
+            <?php include_once ('./src/connexion_user.inc.php'); ?>
             <br>
             <p class="warning"></p>
 
             <div class="form-element" role="form">
-            <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
-            <input type="text" name="nom" class="floating-label" placeholder="Nom" aria-required="true">
             <input type="text" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
-            <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
-                <option>Pays</option>
-                <option>France</option>
-                <option>Italie</option>
-                <option>Allemagne</option>
-                <option>Chine</option>
-                <option>Espagne</option> 
-            </select>
-            <select type="text" name="ville" class="floating-label" placeholder="ville" aria-required="true">
-                <option>Ville</option>
-                <option>Paris</option>
-                <option>Milan</option>
-                <option>Munich</option>
-                <option>Pekin</option>
-                <option>Barcelone</option>
-              </select>
-            <input type="submit" class="btn-sign-in" value="Je m'inscris">
+            <input type="submit" class="btn-sign-in" value="Se Connecter">
             </div>
         </form>
 </main>

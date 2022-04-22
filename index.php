@@ -15,6 +15,7 @@
 </head>
 <body>
     <header>
+        
         <img alt="icon" src="./asset/olympique.png">
         <h1>Maison des ligues et de tous les sports</h1>
     </header>
@@ -187,6 +188,6 @@
             </figcaption>
         </figure>
     </div>
-    <script src="./src/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
