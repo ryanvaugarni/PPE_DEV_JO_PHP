@@ -23,7 +23,7 @@
         <br>
         <h2>Vous êtes tombé sur la bonne page, l'inscription se passe tout en bas</h2>
         <br>
-        <p>Rejoins le club des JO 2024, n'attends plus, vous ne serez pas déçu</p>
+        <p>Rejoins le club des JO 2024, n'attendez plus, vous ne serez pas déçu</p>
             <br>
     </section>
     <a class="return" href="index.php">Retour</a>
@@ -129,6 +129,6 @@
         </figcaption>
     </figure>
 </div>
-<script src="./src/app.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
