@@ -21,11 +21,9 @@
 <main>
     <section>
         <br>
-        <h2>Vous êtes tombé sur la bonne page l'inscription se passe tout en bas </h2>
+        <h2>Vous êtes tombé sur la bonne page, l'inscription se passe tout en bas</h2>
         <br>
-        <p>Tous les mois profitez de toutes les nouveauts série et cinéma. A partir du mois
-            prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
-            les films en VO, VOST, VF et plus d'options</p>
+        <p>Rejoins le club des JO 2024, n'attends plus, vous ne serez pas déçu</p>
             <br>
     </section>
     <a class="return" href="index.php">Retour</a>
@@ -86,7 +84,7 @@
 
             <div class="form-element" role="form">
             <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
-            <input type="text" name="nom" class="floating-label" placeholder="Nom" aria-required="true">
+            <input type="text" name="nom" class="floating-label" placeholder="Nom de famille" aria-required="true">
             <input type="text" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
             <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
@@ -110,7 +108,7 @@
         </form>
 </main>
 <footer>
-    <p>&copy; - Streaming - Ryan Vaugarni - 2022</p>
+    <p>&copy; - Maison des Ligues - Ryan Vaugarni - 2022</p>
 </footer>
 <!-- modale -->
 <div class="parent-modale" role="dialog">

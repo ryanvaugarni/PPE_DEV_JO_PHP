@@ -170,7 +170,7 @@
         <a href="./form.php">Cliquez ici pour commencer</a>
     </main>
     <footer>
-        <p>&copy; - Streaming - Ryan Vaugarni - 2022</p>
+        <p>&copy; - Maison des Ligues - Ryan Vaugarni - 2022</p>
     </footer>
     <!-- modale -->
     <div class="parent-modale" role="dialog">
