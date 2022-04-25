@@ -104,6 +104,9 @@
                 <option>Barcelone</option>
               </select>
             <input type="submit" class="btn-sign-in" value="Je m'inscris">
+            <hr>
+            <br>
+            <p>Vous avez déjà un compte ?<a href="login.php">Connectez-vous ici</a></p>
             </div>
         </form>
 </main>

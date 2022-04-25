@@ -32,11 +32,11 @@
                             else 
                             {
                                 $_bdd->exec("SELECT FROM `formulaire` WHERE email='$_email' AND mdp='$_mdp'.hash('sha256', $_mdp) ");
-                                print "<p class=\"success\"> Vous vous êtes connecter avec succès.</p>";
+                                print "<p class=\"success\"> Vous vous êtes connecté avec succès.</p>";
                                 session_start();
                                 $_SESSION['email'] = $_email;
                                 $_SESSION['mdp'] = $_password;
-                                sleep(3);
+                                sleep(1);
                                 header('Location: index.php');
                             }
                         }  
