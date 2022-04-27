@@ -85,9 +85,9 @@
             <p class="warning"></p>
 
             <div class="form-element" role="form">
-            <input type="text" name="email" class="floating-label" placeholder="Email" aria-required="true">
+            <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
-            <input type="submit" class="btn-sign-in" value="Se Connecter">
+            <input type="submit" name="submit" class="btn-sign-in" value="Se Connecter">
             </div>
         </form>
 </main>

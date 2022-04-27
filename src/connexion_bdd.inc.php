@@ -28,17 +28,17 @@
                     {
                         if(is_numeric($_prenom) || is_numeric($_nom) || is_numeric($_email) || is_numeric($_password) || is_numeric($_pays) || is_numeric($_ville))
                         {
-                            print "<p class=\"warning\"> veuillez saisir des lettres</p>";
+                            echo "<p class=\"warning\"> veuillez saisir des lettres</p>";
                         }
                         else if(!filter_var($_email, FILTER_VALIDATE_EMAIL)) {
-                            print "<p class=\"warning\"> veuillez saisir un email valide</p>";
+                            echo "<p class=\"warning\"> veuillez saisir un email valide</p>";
                         }
                         else 
                         {
-                            $_bdd->exec("INSERT INTO `formulaire`(prenom, nom, email, mdp, pays, ville) VALUES ('$_prenom', '$_nom', '$_email', '$_password', '$_pays', '$_ville')");
-                            print "<p class=\"success\"> Votre inscription a bien été prise en compte </p>";
-                            sleep(1);
-                            header('Location: login.php');
+                            $_bdd->exec("INSERT INTO `formulaire`(prenom, nom, email, mdp, pays, ville) VALUES ('$_prenom', '$_nom', '$_email', '".hash('sha256',$_password)."', '$_pays', '$_ville')");
+                            echo "<p class=\"success\"> Votre inscription a bien été prise en compte </p>";
+                            // sleep(1);
+                            // header('Location: login.php');
 
                         }
                     }  

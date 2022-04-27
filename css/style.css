@@ -238,7 +238,7 @@ footer p{
     border: none;
     width: 50%;
     margin: 0 auto;
-    color: rgb(64, 112, 59);
+    color: rgb(58, 145, 49);
     border-radius: 1rem;
     background-color: #292929;
 }
@@ -323,6 +323,7 @@ hr{ /* barre d'espace entre les articles */
     max-width: 100%;
     margin: 0 auto;
     color: rgb(155, 187, 202);
+    border: none;
 }
 h3{
     text-align: center;

@@ -76,7 +76,7 @@
         </ul>
         <br>
     </article>
-        <form method="post" class="container"> 
+        <form action="form.php" method="post" class="container"> 
             <h3>Formulaire d'inscription</h3>
             <?php include_once ('./src/connexion_bdd.inc.php'); ?>
             <br>
@@ -85,7 +85,8 @@
             <div class="form-element" role="form">
             <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
             <input type="text" name="nom" class="floating-label" placeholder="Nom de famille" aria-required="true">
-            <input type="text" name="email" class="floating-label" placeholder="Email" aria-required="true">
+
+            <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
             <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
                 <option>Pays</option>
@@ -103,10 +104,10 @@
                 <option>Pekin</option>
                 <option>Barcelone</option>
               </select>
-            <input type="submit" class="btn-sign-in" value="Je m'inscris">
+            <input type="submit" name="submit" class="btn-sign-in" value="Je m'inscris">
             <hr>
             <br>
-            <p>Vous avez déjà un compte ?<a href="login.php">Connectez-vous ici</a></p>
+            <p>Vous venez de vous inscrire ? ou vous avez déjà un compte ?<a href="login.php">Connectez-vous ici</a></p>
             </div>
         </form>
 </main>
