@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PPE MAISON DES LIGUES</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon-16x16.png">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="./css/style.css">
-        
-    </head>
+<?php
+    include_once "./src/header.inc.php";
+?>
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
@@ -78,16 +66,21 @@
     </article>
         <form action="form.php" method="post" class="container"> 
             <h3>Formulaire d'inscription</h3>
-            <?php include_once ('./src/connexion_bdd.inc.php'); ?>
+         
+             <?php include_once ('./src/connexion_bdd.inc.php'); ?>
             <br>
             <p class="warning"></p>
-
+        
             <div class="form-element" role="form">
+            <label for="nom">Prenom</label>
             <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
+            <label for="nom">Nom</label>
             <input type="text" name="nom" class="floating-label" placeholder="Nom de famille" aria-required="true">
-
+            <label for="nom">Email</label>
             <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
+            <label for="nom">Mot de passe</label>
             <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <label for="nom">Pays</label>
             <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
                 <option>Pays</option>
                 <option>France</option>
@@ -96,6 +89,7 @@
                 <option>Chine</option>
                 <option>Espagne</option> 
             </select>
+            <label for="nom">Ville</label>
             <select type="text" name="ville" class="floating-label" placeholder="ville" aria-required="true">
                 <option>Ville</option>
                 <option>Paris</option>
@@ -104,7 +98,7 @@
                 <option>Pekin</option>
                 <option>Barcelone</option>
               </select>
-            <input type="submit" name="submit" class="btn-sign-in" value="Je m'inscris">
+            <input type="submit" name="submit_form" class="btn-sign-in" value="Je m'inscris">
             <hr>
             <br>
             <p>Vous venez de vous inscrire ? ou vous avez déjà un compte ?<a href="login.php">Connectez-vous ici</a></p>

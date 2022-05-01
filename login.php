@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PPE MAISON DES LIGUES</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon-16x16.png">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="./css/style.css">
-        
-    </head>
+<?php
+    include_once "./src/header.inc.php";
+?>
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
@@ -21,7 +9,7 @@
 <main>
     <section>
         <br>
-        <h2>Vous êtes tombé sur la bonne page l'inscription se passe tout en bas </h2>
+        <h2>Vous êtes tombé sur la bonne page la conncexion se passe tout en bas </h2>
         <br>
         <p>Tous les mois profitez de toutes les nouveauts série et cinéma. A partir du mois
             prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
@@ -83,16 +71,17 @@
             <?php include_once ('./src/connexion_user.inc.php'); ?>
             <br>
             <p class="warning"></p>
-
             <div class="form-element" role="form">
-            <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
-            <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <label for="login">Email</label>
+            <input type="email" name="email_co" class="floating-label" placeholder="Email" aria-required="true">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
             <input type="submit" name="submit" class="btn-sign-in" value="Se Connecter">
             </div>
         </form>
 </main>
 <footer>
-    <p>&copy; - Streaming - Ryan Vaugarni - 2022</p>
+    <p>&copy; - Maison des Ligues - Ryan Vaugarni - 2022</p>
 </footer>
 <!-- modale -->
 <div class="parent-modale" role="dialog">

@@ -3,8 +3,9 @@
 ?>
 <body>
     <header>
+        
         <img alt="icon" src="./asset/olympique.png">
-        <h1>Maison des ligues et de tous les sports</h1>
+        <h1>JO - Espace Membre</h1>
     </header>
     <br>
     <main>
