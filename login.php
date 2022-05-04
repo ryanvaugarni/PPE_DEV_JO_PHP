@@ -76,7 +76,7 @@
             <input type="email" name="email_co" class="floating-label" placeholder="Email" aria-required="true">
             <label for="password">Mot de passe</label>
             <input type="password" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
-            <input type="submit" name="submit" class="btn-sign-in" value="Se Connecter">
+            <input type="submit" name="submit_co" class="btn-sign-in" value="Se Connecter">
             </div>
         </form>
 </main>

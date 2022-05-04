@@ -229,18 +229,35 @@ footer p{
 }
 /* PAGE FORM*/
 .warning{
-    display: none;
-    color: var(--color-warning);
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    width: 50%;
+    background-color: var(--color-warning);
+    margin: 2rem auto -1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .success{
-    padding: 3rem;
+    color: #fff;
     text-align: center;
-    border: none;
+    line-height: 5rem;
     width: 50%;
-    margin: 0 auto;
-    color: rgb(58, 145, 49);
+    background-color: var(--color-success);
+    margin: 2rem auto -1rem;
     border-radius: 1rem;
-    background-color: #292929;
+    -webkit-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.name{
+    text-transform: capitalize;
 }
 .return{
     padding: 1rem;

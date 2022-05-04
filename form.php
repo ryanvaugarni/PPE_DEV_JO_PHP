@@ -70,18 +70,17 @@
              <?php include_once ('./src/connexion_bdd.inc.php'); ?>
             <br>
             <p class="warning"></p>
-        
             <div class="form-element" role="form">
             <label for="nom">Prenom</label>
-            <input type="text" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
+            <input type="text" name="firstname" class="floating-label name"  placeholder="Prénom" aria-required="true">
             <label for="nom">Nom</label>
-            <input type="text" name="nom" class="floating-label" placeholder="Nom de famille" aria-required="true">
+            <input type="text" name="lastname" class="floating-label name" placeholder="Nom de famille" aria-required="true">
             <label for="nom">Email</label>
             <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <label for="nom">Mot de passe</label>
-            <input type="password" name="mdp" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <input type="password" name="passwords" class="floating-label" placeholder="Mot de passe" aria-required="true">
             <label for="nom">Pays</label>
-            <select type="text" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
+            <select type="text" name="country" class="floating-label" placeholder="Pays" aria-required="true">
                 <option>Pays</option>
                 <option>France</option>
                 <option>Italie</option>
@@ -90,7 +89,7 @@
                 <option>Espagne</option> 
             </select>
             <label for="nom">Ville</label>
-            <select type="text" name="ville" class="floating-label" placeholder="ville" aria-required="true">
+            <select type="text" name="city" class="floating-label" placeholder="ville" aria-required="true">
                 <option>Ville</option>
                 <option>Paris</option>
                 <option>Milan</option>
