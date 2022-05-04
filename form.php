@@ -9,7 +9,7 @@
 <main>
     <section>
         <br>
-        <h2>Vous êtes tombé sur la bonne page, l'inscription se passe tout en bas</h2>
+        <h2>Vous êtes tombés sur la bonne page, l'inscription se passe tout en bas</h2>
         <br>
         <p>Rejoins le club des JO 2024, n'attendez plus, vous ne serez pas déçu</p>
             <br>

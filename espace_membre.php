@@ -10,12 +10,12 @@
     <br>
     <main>
         <section>
-            <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+            <h2>Bienvenue blabla dans ton espace membre</h2>
             <br>
-            <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
-                prochain on vous propose tous les sports qui seront diffusés pendant les JO de Paris 2024 sur vos support préférés
+            <p>Profite des dates des JO en avant premier</p>
                 <br>
                 <br>
+                <p>
             Alors ne tardez plus inscrivez-vous !
             </p>
         </section>
@@ -155,7 +155,7 @@
             </li>
             
         </ul>
-        <a href="./form.php">Cliquez ici pour commencer</a>
+        <a href="./login.php">Déconnexion</a>
     </main>
     <footer>
         <p>&copy; - Maison des Ligues - Ryan Vaugarni - 2022</p>

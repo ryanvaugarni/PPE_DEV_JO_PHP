@@ -9,7 +9,7 @@
 <main>
     <section>
         <br>
-        <h2>Vous êtes tombé sur la bonne page la conncexion se passe tout en bas </h2>
+        <h2>Vous êtes tombés sur la bonne page la conncexion se passe tout en bas </h2>
         <br>
         <p>Tous les mois profitez de toutes les nouveauts série et cinéma. A partir du mois
             prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
@@ -77,6 +77,8 @@
             <label for="password">Mot de passe</label>
             <input type="password" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
             <input type="submit" name="submit_co" class="btn-sign-in" value="Se Connecter">
+            <br>
+            <p>Vous n'avez pas de compte ?<a href="form.php">Inscrivez-vous ici</a></p>
             </div>
         </form>
 </main>

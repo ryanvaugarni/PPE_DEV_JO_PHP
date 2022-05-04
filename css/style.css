@@ -74,6 +74,12 @@ header h1{
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
+label{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+}
 header img{
     max-width: 14rem;
     display: block;
@@ -192,6 +198,10 @@ div figure img{
     color: #fff;
     padding: 1rem;
 }
+h3{
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+}
 .parent-modale .modale .desc p :is(time){
     padding: 1rem;
 }
@@ -218,7 +228,7 @@ main button{
     margin: 0 auto;
     display: block;
     padding: 1rem;
-    background-color: #6599CC;
+    background-color: #5d96d0;
     border-radius: 1rem;
 }
 main a:hover{

@@ -34,30 +34,31 @@ if(isset($_POST['submit_co'])){
         $user_mailss = htmlspecialchars($_POST['email_co']);
         $user_passwordss = htmlspecialchars($_POST['mdp_co']);
         
-         $checkIfUserExistss = $bdd->prepare('SELECT * FROM formulaire where email = ?');
-         $checkIfUserExistss->execute(array($user_mailss));
+        $checkIfUserExistss = $bdd->prepare('SELECT * FROM formulaire where email = ?');
+        $checkIfUserExistss->execute(array($user_mailss));
 
-         $usersInfoss = $checkIfUserExistss->fetch();
+        $usersInfoss = $checkIfUserExistss->fetch();
 
             $_SESSION['email'] = $usersInfoss['email'];
         if(($checkIfUserExistss->rowCount() > 0) && ($user_mailss == $usersInfoss['email']))
         {   
-            echo "email is correct";
+            echo "<p class='success'>Vous avez rentré un email valide </p>";
+            // else{
+            //     echo "<p class='warning'>Nous n'avons trouvé aucun compte avec ce mail</p>";
+            // }
             if (password_verify($user_passwordss, $usersInfoss['passwords'])) {
-                echo "<br>Connexion réussie !";
+                echo "<br><p class='success'>Connexion réussie ! </p>";
                 sleep(2);
                 header('Location: espace_membre.php');
             } else {
-                echo "<br>Identifiants invalides";
+                echo "<br><p class='warning'>Mot de passe incorrect</p>";
             }
-     echo "<p class='success'>Veuillez completer les champs </p>";
+     echo "<p class='warning'>Veuillez completer les champs </p>";
 
    }else{
     echo "<p class='warning'>Veuillez completer les champs </p>";
 
    }
-
 }
-
 }
             ?>
