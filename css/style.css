@@ -369,11 +369,11 @@ footer p{
 @media screen and (max-width: 60rem) {
        header img{
             position: absolute;
-            top: 3rem;
+            top: 5rem;
             left: 50%;
             transform: translate(-50%,-50%);
             display: block;
-            width: 20rem;
+            max-width: 12rem;
         }
         header{
             font-weight: 1rem;
@@ -384,6 +384,10 @@ footer p{
             grid-template-columns: repeat(1, 1fr);
             margin: 0 auto;
         }
+       main section p{
+           width: 100%;
+
+       }
         main section h2{
             text-align: center;
             color: #fff;
