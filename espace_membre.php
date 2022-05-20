@@ -12,15 +12,11 @@ session_start();
     <br>
     <main>
         <section>
-
-           <h2> Bienvenue <?= $_SESSION['firstname'] ?> sur ton espace membre</h2>
+           <h2 class="hello"> Bienvenue <?= $_SESSION['firstname'] ?> sur ton espace membre</h2>
             <br>
             <p>Profite des dates des JO en avant premier</p>
                 <br>
                 <br>
-                <p>
-            Alors ne tardez plus inscrivez-vous !
-            </p>
         </section>
         <br>
         <ul class="grid-picture-large">

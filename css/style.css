@@ -91,6 +91,9 @@ main section h2{
     color: rgb(255, 255, 255);
     margin-top: 4rem;
 }
+section .hello{
+    font-size: 3rem;
+}
 main section p{
     padding: 3rem;
     text-align: center;
