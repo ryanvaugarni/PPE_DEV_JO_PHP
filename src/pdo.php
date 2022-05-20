@@ -10,10 +10,11 @@ session_start();
             }
         try
         {
-            $_host = "localhost";
-            $_dbname = "formulaire_de_contact";
-            $_user = "root";
-            $_password = getenv('MYSQL_SECURE_PASSWORD');
+            $_host = "172.190.1.52";
+            $_dbname = "rvaugarni";
+            $_user = "rvaugarni";
+            $_password = "292215Rv78";
+            // $_password = getenv('MYSQL_SECURE_PASSWORD');
             $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             $_bdd = new PDO("mysql:host={$_host};dbname={$_dbname};", $_user, $_password);
             $_prenom = $_POST["firstname"];
