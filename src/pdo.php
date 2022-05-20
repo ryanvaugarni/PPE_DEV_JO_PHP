@@ -3,7 +3,7 @@ if(!isset($_SESSION)){
     session_start();
 }
         try{
-            $bdd = new PDO('mysql:host=172.190.1.52;dbname=rvaugarni;charset=utf8;','root',''); 
+            $bdd = new PDO('mysql:host=172.190.1.52;dbname=rvaugarni;charset=utf8;','rvaugarni','292215Rv78'); 
         }
         catch(Exception $e)
             {
