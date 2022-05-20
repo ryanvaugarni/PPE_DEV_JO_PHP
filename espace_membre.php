@@ -10,7 +10,13 @@
     <br>
     <main>
         <section>
-            <h2>Bienvenue blabla dans ton espace membre</h2>
+<?php
+          if (isset($_SESSION['session']) && isset($_SESSION['user']))
+        {
+          echo 'Bonjour ' . $_SESSION['pseudo']->firstname;
+        }
+      ?>
+            
             <br>
             <p>Profite des dates des JO en avant premier</p>
                 <br>

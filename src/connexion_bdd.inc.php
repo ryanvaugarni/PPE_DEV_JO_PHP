@@ -1,31 +1,6 @@
 <?php
-session_start();
-try{
-    $bdd = new PDO('mysql:host=localhost;dbname=formulaire_de_contact;charset=utf8;','root',''); 
-}
-catch(Exception $e)
-    {
-        die('DATABASE ERROR!' .$e->getMessage());
-        echo "<script>alert('DATABASE ERROR')</script>";
-    }
-try
-{
-    $_host = "localhost";
-    $_dbname = "formulaire_de_contact";
-    $_user = "root";
-    $_password = getenv('MYSQL_SECURE_PASSWORD');
-    $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $_bdd = new PDO("mysql:host={$_host};dbname={$_dbname};", $_user, $_password);
-    $_prenom = $_POST["firstname"];
-    array(
-        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-        $_pdo_options
-    );
-}
-catch(Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
+include './src/pdo.php';
+
 if (!empty($_POST))
 {
     //le formulaire a été envoyé
@@ -49,20 +24,14 @@ if (!empty($_POST))
                 // On insert les données dans la base de données
                 $qs = $bdd->prepare("INSERT INTO formulaire (`firstname`, `lastname`, `email`, `passwords`, `country`, `city`) VALUES (?, ?, ?, ?, ?, ?)");
                 $qs->execute(array($_POST["firstname"], $_POST["lastname"], $_POST["email"], $password, $_POST["country"], $_POST["city"]));
-                // $qs->execute(array(
-                //     'firstname' => $_POST["firstname"],
-                //     'lastname' => $_POST["lastname"],
-                //     'email' => $_POST["email"],
-                //     'password' => $password,
-                //     'country' => $_POST["country"],
-                //     'city' => $_POST["city"]
-                // ));
+
+                $_SESSION["firstname"] = $_POST["firstname"];
+                $_SESSION["lastname"] = $_POST["lastname"];
+                $_SESSION["email"] = $_POST["email"];
                 print "<p class=\"success\"> Votre inscription a bien été prise en compte</p>";
                 print "<p class=\"success\"> ".$_prenom." vous pouvez maintenant vous connecter</p>";
                 // On redirige vers la page de connexion
-                // header("Location: connexion.php");
-                //l'email est déjà utilisé
-            
+                // header("Location: connexion.php");    
             }
             else
             {

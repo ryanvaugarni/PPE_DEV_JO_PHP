@@ -1,4 +1,5 @@
 <?php
+session_start();
     class User {
         static $_title = "- Maison des ligues - ";
         public $_css = "./css/style.css";

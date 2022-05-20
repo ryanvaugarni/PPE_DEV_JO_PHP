@@ -1,31 +1,6 @@
 <?php
-session_start();
-        try{
-            $bdd = new PDO('mysql:host=localhost;dbname=formulaire_de_contact;charset=utf8;','root',''); 
-        }
-        catch(Exception $e)
-            {
-                die('DATABASE ERROR!' .$e->getMessage());
-                echo "<script>alert('DATABASE ERROR')</script>";
-            }
-        try
-        {
-            $_host = "localhost";
-            $_dbname = "formulaire_de_contact";
-            $_user = "root";
-            $_password = getenv('MYSQL_SECURE_PASSWORD');
-            $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-            $_bdd = new PDO("mysql:host={$_host};dbname={$_dbname};", $_user, $_password);
-            $_prenom = $_POST["firstname"];
-            array(
-                PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-                $_pdo_options
-            );
-        }
-        catch(Exception $e)
-        {
-            die('Erreur : ' . $e->getMessage());
-        }
+include_once ('./src/pdo.php');
+
 if(isset($_POST['submit_co'])){
    
    if(!empty($_POST['email_co'])  && !empty($_POST['mdp_co']))
@@ -43,9 +18,6 @@ if(isset($_POST['submit_co'])){
         if(($checkIfUserExistss->rowCount() > 0) && ($user_mailss == $usersInfoss['email']))
         {   
             echo "<p class='success'>Vous avez rentré un email valide </p>";
-            // else{
-            //     echo "<p class='warning'>Nous n'avons trouvé aucun compte avec ce mail</p>";
-            // }
             if (password_verify($user_passwordss, $usersInfoss['passwords'])) {
                 echo "<br><p class='success'>Connexion réussie ! </p>";
                 sleep(2);
