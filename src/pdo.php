@@ -1,7 +1,7 @@
 <?php
 session_start();
         try{
-            $bdd = new PDO('mysql:host=192.168.64.9;dbname=rvaugarni;charset=utf8;','root',''); 
+            $bdd = new PDO('mysql:host=localhost;dbname=rvaugarni;charset=utf8;','root',''); 
         }
         catch(Exception $e)
             {
@@ -10,7 +10,7 @@ session_start();
             }
         try
         {
-            $_host = "192.168.64.9";
+            $_host = "localhost";
             $_dbname = "rvaugarni";
             $_user = "root";
             $_password = getenv('MYSQL_SECURE_PASSWORD');
