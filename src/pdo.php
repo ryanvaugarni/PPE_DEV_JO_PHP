@@ -1,5 +1,5 @@
 <?php
-session_start();
+
         try{
             $bdd = new PDO('mysql:host=172.190.1.52;dbname=rvaugarni;charset=utf8;','rvaugarni','292215Rv78'); 
         }
