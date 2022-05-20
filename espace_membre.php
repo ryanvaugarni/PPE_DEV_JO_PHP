@@ -1,4 +1,5 @@
 <?php
+session_start();
     include_once "./src/header.inc.php";
 ?>
 <body>
@@ -6,17 +7,13 @@
         
         <img alt="icon" src="./asset/olympique.png">
         <h1>JO - Espace Membre</h1>
+        <a href="./login.php">Déconnexion</a>
     </header>
     <br>
     <main>
         <section>
-<?php
-          if (isset($_SESSION['session']) && isset($_SESSION['user']))
-        {
-          echo 'Bonjour ' . $_SESSION['pseudo']->firstname;
-        }
-      ?>
-            
+
+           <h2> Bienvenue <?= $_SESSION['firstname'] ?> sur ton espace membre</h2>
             <br>
             <p>Profite des dates des JO en avant premier</p>
                 <br>
