@@ -1,4 +1,7 @@
 <?php
+if(!isset($_SESSION)){
+    session_start();
+}
 include './src/pdo.php';
 
 if (!empty($_POST))
@@ -13,7 +16,7 @@ if (!empty($_POST))
         {
             //l'email est valide
             // On vérifie que l'email n'est pas déjà utilisé
-            $qs = $bdd->prepare("SELECT * FROM formulaire WHERE `email` = :email ");
+            $qs = $bdd->prepare("SELECT * FROM client WHERE `email` = :email ");
             $qs->execute(array('email' => $_POST["email"]
                 ));
             if ($qs->rowCount() == 0)
@@ -22,7 +25,7 @@ if (!empty($_POST))
                 // On crypte le mot de passe
                 $password = password_hash($_POST["passwords"], PASSWORD_DEFAULT);
                 // On insert les données dans la base de données
-                $qs = $bdd->prepare("INSERT INTO formulaire (`firstname`, `lastname`, `email`, `passwords`, `country`, `city`) VALUES (?, ?, ?, ?, ?, ?)");
+                $qs = $bdd->prepare("INSERT INTO client (`firstname`, `lastname`, `email`, `passwords`, `country`, `city`) VALUES (?, ?, ?, ?, ?, ?)");
                 $qs->execute(array($_POST["firstname"], $_POST["lastname"], $_POST["email"], $password, $_POST["country"], $_POST["city"]));
 
                 $_SESSION["firstname"] = $_POST["firstname"];

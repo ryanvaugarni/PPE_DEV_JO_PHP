@@ -1,4 +1,7 @@
 <?php
+if(!isset($_SESSION)){
+    session_start();
+}
 include_once ('./src/pdo.php');
 
 if(isset($_POST['submit_co'])){
@@ -9,7 +12,7 @@ if(isset($_POST['submit_co'])){
         $user_mailss = htmlspecialchars($_POST['email_co']);
         $user_passwordss = htmlspecialchars($_POST['mdp_co']);
         
-        $checkIfUserExistss = $bdd->prepare('SELECT * FROM formulaire where email = ?');
+        $checkIfUserExistss = $bdd->prepare('SELECT * FROM client where email = ?');
         $checkIfUserExistss->execute(array($user_mailss));
 
         $usersInfoss = $checkIfUserExistss->fetch();
