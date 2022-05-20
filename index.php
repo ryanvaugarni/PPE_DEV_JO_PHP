@@ -1,7 +1,5 @@
 <?php
-if(!isset($_SESSION)){
-    session_start();
-}
+session_start();
     include_once "./src/header.inc.php";
 ?>
 <body>

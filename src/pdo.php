@@ -1,7 +1,7 @@
 <?php
-
+session_start();
         try{
-            $bdd = new PDO('mysql:host=172.190.1.52;dbname=rvaugarni;charset=utf8;','rvaugarni','292215Rv78'); 
+            $bdd = new PDO('mysql:host=192.168.64.9;dbname=rvaugarni;charset=utf8;','root',''); 
         }
         catch(Exception $e)
             {
@@ -10,11 +10,10 @@
             }
         try
         {
-            $_host = "172.190.1.52";
+            $_host = "192.168.64.9";
             $_dbname = "rvaugarni";
-            $_user = "rvaugarni";
-            $_password = "292215Rv78";
-            // $_password = getenv('MYSQL_SECURE_PASSWORD');
+            $_user = "root";
+            $_password = getenv('MYSQL_SECURE_PASSWORD');
             $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             $_bdd = new PDO("mysql:host={$_host};dbname={$_dbname};", $_user, $_password);
             $_prenom = $_POST["firstname"];
