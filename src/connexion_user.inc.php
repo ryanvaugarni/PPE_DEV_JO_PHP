@@ -30,7 +30,6 @@ if(isset($_POST['submit_co'])){
 
    }else{
     echo "<p class='warning'>Veuillez completer les champs </p>";
-
    }
 }
 }
