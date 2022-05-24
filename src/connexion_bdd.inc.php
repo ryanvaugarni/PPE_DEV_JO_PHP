@@ -30,9 +30,7 @@ if (!empty($_POST))
                 $_SESSION["lastname"] = $_POST["lastname"];
                 $_SESSION["email"] = $_POST["email"];
                 print "<p class=\"success\"> Votre inscription a bien été prise en compte</p>";
-                print "<p class=\"success\"> ".$_prenom." vous pouvez maintenant vous connecter</p>";
-                // On redirige vers la page de connexion
-                // header("Location: connexion.php");    
+                print "<p class=\"success\"> ".$_prenom." vous pouvez maintenant vous connecter</p>"; 
             }
             else
             {

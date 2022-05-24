@@ -94,6 +94,9 @@ main section h2{
 section .hello{
     font-size: 3rem;
 }
+section .hello span{
+    text-transform: capitalize;
+}
 main section p{
     padding: 3rem;
     text-align: center;
@@ -111,8 +114,8 @@ main .grid-picture-large{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 2rem auto;
-    max-width: 85rem;   
-    gap: 2rem;
+    max-width: 90rem;   
+    gap: 3rem;
 }
 main ul img{
     border-radius: 1rem;
@@ -131,6 +134,26 @@ ul figure{
 }
 ul figure .material-icons{
     vertical-align: -.4rem;
+}
+.connect::before{
+    content: url('../asset/connexion.png');
+    position: absolute;
+    margin-left: -2.2rem;
+    transform: translateY(0.1rem);
+    -webkit-transform: translateY(0.1rem);
+    -moz-transform: translateY(0.1rem);
+    -ms-transform: translateY(0.1rem);
+    -o-transform: translateY(0.1rem);
+}
+.deco::before{
+    content: url('../asset/deconnexion.png');
+    position: absolute;
+    margin-left: -2.2rem;
+    transform: translateY(0.1rem);
+    -webkit-transform: translateY(0.1rem);
+    -moz-transform: translateY(0.1rem);
+    -ms-transform: translateY(0.1rem);
+    -o-transform: translateY(0.1rem);
 }
 /* Overley effect */
 ul figure figcaption{
@@ -177,6 +200,35 @@ ul figure:hover figcaption{
     z-index: 2;
     cursor: pointer;
 }
+th, tr, td{
+    border: solid .1rem #fff;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #222;
+    border: solid .1rem #fff;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+legend{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+fieldset{
+    width: 50%;
+    margin: 0 auto;
+    border: solid .1rem #fff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
 .parent-modale .modale .desc{
     position: static;
     transition: none;
@@ -216,6 +268,20 @@ h3{
     z-index: 2;
     color: rgb(248, 247, 247);
     cursor: pointer;
+}
+header a{
+    position: absolute;
+    right: 8rem;
+    padding: 1.5rem;
+    background-color: #6599CC;
+    max-width: 45rem;
+    padding-left: 3rem;
+    float: right;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+header a:hover{
+    background-color: #4991d9;
 }
 main a{
     padding: 2rem;

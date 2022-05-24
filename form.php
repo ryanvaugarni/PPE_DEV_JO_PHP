@@ -6,6 +6,7 @@ session_start();
     <header>
         <img alt="icon" src="./asset/olympique.png">
         <h1>JO - Inscription</h1>
+        <a class="connect" href="./login.php">Connexion</a>
 </header>
 <main>
     <section>
@@ -72,32 +73,18 @@ session_start();
             <br>
             <p class="warning"></p>
             <div class="form-element" role="form">
-            <label for="nom">Prenom</label>
+            <label for="nom">Prenom :</label>
             <input type="text" name="firstname" class="floating-label name"  placeholder="Prénom" aria-required="true">
-            <label for="nom">Nom</label>
+            <label for="nom">Nom :</label>
             <input type="text" name="lastname" class="floating-label name" placeholder="Nom de famille" aria-required="true">
-            <label for="nom">Email</label>
+            <label for="nom">Email :</label>
             <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
-            <label for="nom">Mot de passe</label>
-            <input type="password" name="passwords" class="floating-label" placeholder="Mot de passe" aria-required="true">
-            <label for="nom">Pays</label>
-            <select type="text" name="country" class="floating-label" placeholder="Pays" aria-required="true">
-                <option>Pays</option>
-                <option>France</option>
-                <option>Italie</option>
-                <option>Allemagne</option>
-                <option>Chine</option>
-                <option>Espagne</option> 
-            </select>
-            <label for="nom">Ville</label>
-            <select type="text" name="city" class="floating-label" placeholder="ville" aria-required="true">
-                <option>Ville</option>
-                <option>Paris</option>
-                <option>Milan</option>
-                <option>Munich</option>
-                <option>Pekin</option>
-                <option>Barcelone</option>
-              </select>
+            <label for="nom">Mot de passe :</label>
+            <input type="password" name="passwords" class="floating-label" placeholder="Votre mot de passe" aria-required="true">
+            <label for="nom">Pays :</label>
+            <input type="text" name="country" class="floating-label name" placeholder="France..." aria-required="true">
+            <label for="nom">Ville :</label>
+            <input type="text" name="city" class="floating-label name" placeholder="Paris..." aria-required="true">
             <input type="submit" name="submit_form" class="btn-sign-in" value="Je m'inscris">
             <hr>
             <br>

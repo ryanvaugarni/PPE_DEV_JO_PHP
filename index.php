@@ -6,6 +6,7 @@ session_start();
     <header>
         <img alt="icon" src="./asset/olympique.png">
         <h1>Maison des ligues et de tous les sports</h1>
+        <a class="connect" href="./login.php">Connexion</a>
     </header>
     <br>
     <main>
