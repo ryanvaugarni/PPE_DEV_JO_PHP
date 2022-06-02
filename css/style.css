@@ -212,6 +212,7 @@ ul figure:hover figcaption{
 }
 th, tr, td{
     border: solid .1rem #fff;
+    padding: 1rem;
 }
 table{
     width: 50%;

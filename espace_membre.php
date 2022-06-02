@@ -15,9 +15,6 @@
         <?php include_once "./src/get_member_infos.inc.php";?>
         </section>
         <section>
-   
-    </section>
-    <section>
         <?php include_once "./src/get_member_inscription.inc.php";?>
     </section>
     <br>
@@ -25,7 +22,7 @@
     <fieldset>
     <legend>Choisissez l'évènement auquel vous voulez y assister</legend>
         <ul class="grid-picture-large">
-            <li data-image="./asset/img1.jpg" data-title="Boxe" data-description="La boxe sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="1" data-image="./asset/img1.jpg" data-title="Boxe" data-description="La boxe sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img1.jpg" alt="">
                         <figcaption>
@@ -36,7 +33,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img2.jpg" data-title="Golf" data-description="Le Golf sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="2" data-image="./asset/img2.jpg" data-title="Golf" data-description="Le Golf sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img2.jpg" alt="">
                         <figcaption>
@@ -102,7 +99,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img8.jpg" data-title="Skateboard" data-description="Le Skateboard sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="" data-image="./asset/img8.jpg" data-title="Skateboard" data-description="Le Skateboard sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img8.jpg" alt="">
                         <figcaption>
@@ -135,7 +132,7 @@
                 </p>
                 <time>Years : </time>
                 <br>
-                <a class="connexion" href="./?id_event=1">S'inscrire à l'évènement</a>
+                <a class="connexion" href="">S'inscrire à l'évènement</a>
             </figcaption>
         </figure>
     </div>

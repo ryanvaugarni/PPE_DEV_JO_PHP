@@ -14,7 +14,7 @@
         foreach ($_donnees as $_user) 
         {
 
-            echo "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span> dans ton espace membre</h2>";
+            echo "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span></h2>";
             
 
             print
@@ -25,7 +25,7 @@
                         .'<th>Prénom</th>'
                         .'<th>Nom</th>'
                         .'<th>Email</th>'
-                        .'<th>Âge</th>'
+                        .'<th>Pays</th>'
                         .'<th>Ville</th>'
                     .'</tr>'
                     .'<tr>'
