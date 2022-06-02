@@ -135,7 +135,7 @@
                 </p>
                 <time>Years : </time>
                 <br>
-                <a class="connexion" href="./login.php">S'inscrire à l'évènement</a>
+                <a class="connexion" href="./?id_event=1">S'inscrire à l'évènement</a>
             </figcaption>
         </figure>
     </div>

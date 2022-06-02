@@ -1,12 +1,15 @@
 <?php 
     include_once './src/pdo.php';
 
-    $_emailUser = $_SESSION['email'];
-    $_nom = $_SESSION['lastname'];
+    $_userID = $_SESSION['id'];
     
-    $_req = $bdd->prepare("SELECT firstname, lastname, email, country, city FROM client WHERE email = :email");
+    $_req = $bdd->prepare("SELECT id_client, id_event, date_consultation FROM historique_client 
+                           INNER JOIN evenement ON date.id_event = evenement.id_event
+                           WHERE date.id_client = :id
+                           GROUP BY nom_evenement
+                           ORDER BY date.date_consultation DESC LIMIT 5");
     $_req -> execute(array(
-        'email' => $_emailUser
+        'idUser' => $_userID
     ));
     if ($_req)
     {
@@ -23,7 +26,7 @@
                         .'<th>Date Evenements</th>'
                     .'</tr>'
                     .'<tr>'
-                        .'<td>'.$_user['firstname'].'</td>'
+                        .'<td>'.$_user[''].'</td>'
                         .'<td>'.$_user['lastname'].'</td>'
                         .'<td>'.$_user['email'].'</td>'
                     .'</tr>'
