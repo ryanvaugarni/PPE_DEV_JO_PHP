@@ -13,10 +13,7 @@
         $_donnees = $_req->fetchAll();
         foreach ($_donnees as $_user) 
         {
-
             print  "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span></h2>";
-            
-
             print
             '<h2> Voici vos informations : </h2>' 
             .'<br>'.
