@@ -13,14 +13,14 @@
     <main>
         <section>
         <?php include_once "./src/get_member_infos.inc.php";?>
-
-            <br>
-            <p>Réserver votre place pour assister aux évènements</p>
-                <br>
         </section>
         <section>
-    <br>
+   
     </section>
+    <section>
+        <?php include_once "./src/get_member_inscription.inc.php";?>
+    </section>
+    <br>
 
     <fieldset>
     <legend>Choisissez l'évènement auquel vous voulez y assister</legend>
@@ -55,7 +55,7 @@
                                 <i class="material-icons" aria-hidden="true">pages</i>
                                     Agrandir
                             </h2>
-                        </figcaption>
+                        </figcaption>   
                 </figure>
             </li>
             <li data-image="./asset/img4.jpg" data-title="La gymnastique artistique" data-description="La gymnastique artistique sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
@@ -91,7 +91,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img7.jpg" data-title="Volley-Ball" data-description="Le Volley-Ball sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-image="./asset/img7.jpg" data-id="7" data-title="Volley-Ball" data-description="Le Volley-Ball sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img7.jpg" alt="">
                         <figcaption>
@@ -134,6 +134,8 @@
                    
                 </p>
                 <time>Years : </time>
+                <br>
+                <a class="connexion" href="./login.php">S'inscrire à l'évènement</a>
             </figcaption>
         </figure>
     </div>

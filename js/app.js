@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", e => {
         document.querySelector(".modale .desc p").innerHTML = `<strong>Déscription : </strong>${desc}`;
         document.querySelector(".modale .desc time").innerText = `Annee ${dates}`;
         document.querySelector(".modale .desc time").setAttribute("datetime", dates);
+        let btn = document.querySelector("main .grid-picture-large");
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.history.pushState(1, "", "/PPE_DEV_JO_PHP/espace-membre.php?id_event=" + id);
+        });
+
     };
     for (rows of el) {
         rows.addEventListener("click", open_modal);

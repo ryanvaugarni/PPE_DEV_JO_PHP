@@ -103,6 +103,6 @@ session_start();
         </figcaption>
     </figure>
 </div>
-<script src="./src/app.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>

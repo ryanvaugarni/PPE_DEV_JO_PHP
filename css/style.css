@@ -145,6 +145,16 @@ ul figure .material-icons{
     -ms-transform: translateY(0.1rem);
     -o-transform: translateY(0.1rem);
 }
+.connexion::before{
+    content: url('../asset/sinscrire.png');
+    position: absolute;
+    margin-left: -2.2rem;
+    transform: translateY(0.1rem);
+    -webkit-transform: translateY(0.1rem);
+    -moz-transform: translateY(0.1rem);
+    -ms-transform: translateY(0.1rem);
+    -o-transform: translateY(0.1rem);
+}
 .deco::before{
     content: url('../asset/deconnexion.png');
     position: absolute;
@@ -215,14 +225,23 @@ table{
     text-align: center;
 }
 legend{
-    color: #fff;
-    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius:  1rem 1rem 0.5rem 0.5rem;
+    padding: 1rem;
+    border: solid .1rem rgb(0, 0, 0);
+    -webkit-border-radius:  1rem 1rem 0.5rem 0.5rem;
+    -moz-border-radius:  1rem 1rem 0.5rem 0.5rem;
+    -ms-border-radius:  1rem 1rem 0.5rem 0.5rem;
+    -o-border-radius:  1rem 1rem 0.5rem 0.5rem;
 }
 fieldset{
     width: 50%;
     margin: 0 auto;
-    border: solid .1rem #fff;
+    background-color: rgb(255, 255, 255);
+    border: solid .1rem rgb(0, 0, 0);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -292,6 +311,19 @@ main a{
     text-align: center;
     color: rgb(255, 255, 255);
     border-radius: 1rem;
+}
+div figure a{
+    padding: 1rem;
+    background-color: #6599CC;
+    margin: 1rem auto;
+    display: block;
+    max-width: 25rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+div figure a:hover{
+    background-color: #4991d9;
 }
 main button{
     margin: 0 auto;
@@ -435,7 +467,7 @@ footer{
 footer p{
     color: #fff;
 }
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 600px) {
        header img{
             position: absolute;
             top: 5rem;
@@ -479,20 +511,5 @@ footer p{
         }
         main p{
             width: 100%;
-        }
-    }
-    @media screen and (orientation:landscape) and (max-width: 63rem){
-        main .grid-picture-large{
-            grid-template-columns: repeat(2, 1fr);
-            margin: 0 auto;
-            gap: 3rem;
-        }
-        main ul img{
-            width: 34rem;
-            height: 52rem;
-        }
-        div figure img{
-            width: 20rem;
-            height: 25rem;
         }
     }

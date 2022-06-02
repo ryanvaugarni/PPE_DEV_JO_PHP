@@ -13,27 +13,19 @@
         $_donnees = $_req->fetchAll();
         foreach ($_donnees as $_user) 
         {
-
-            echo "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span> dans ton espace membre</h2>";
-            
-
             print
-            '<h2> Voici vos informations : </h2>' 
+            '<h2> Voici vos inscriptions : </h2>' 
             .'<br>'.
                 '<table>'
                     .'<tr>'
-                        .'<th>Prénom</th>'
-                        .'<th>Nom</th>'
-                        .'<th>Email</th>'
-                        .'<th>Âge</th>'
-                        .'<th>Ville</th>'
+                        .'<th>Evenement</th>'
+                        .'<th>Date Inscription</th>'
+                        .'<th>Date Evenements</th>'
                     .'</tr>'
                     .'<tr>'
                         .'<td>'.$_user['firstname'].'</td>'
                         .'<td>'.$_user['lastname'].'</td>'
                         .'<td>'.$_user['email'].'</td>'
-                        .'<td>'.$_user['country'].'</td>'
-                        .'<td>'.$_user['city'].'</td>'
                     .'</tr>'
                 .'</table>';
         }}
