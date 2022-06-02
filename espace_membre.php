@@ -44,7 +44,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img3.jpg" data-title="Basketball" data-description="Le Basket sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="3" data-image="./asset/img3.jpg" data-title="Basketball" data-description="Le Basket sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img3.jpg" alt="">
                         <figcaption>
@@ -55,7 +55,7 @@
                         </figcaption>   
                 </figure>
             </li>
-            <li data-image="./asset/img4.jpg" data-title="La gymnastique artistique" data-description="La gymnastique artistique sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="4" data-image="./asset/img4.jpg" data-title="La gymnastique artistique" data-description="La gymnastique artistique sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img4.jpg" alt="">
                         <figcaption>
@@ -66,7 +66,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img5.jpg" data-title="Football" data-description="Le Football sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="5" data-image="./asset/img5.jpg" data-title="Football" data-description="Le Football sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img5.jpg" alt="">
                         <figcaption>
@@ -77,7 +77,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img6.jpg" data-title="Athletisme" data-description="L'Athletisme sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="6" data-image="./asset/img6.jpg" data-title="Athletisme" data-description="L'Athletisme sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img6.jpg" alt="">
                         <figcaption>
@@ -88,7 +88,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img7.jpg" data-id="7" data-title="Volley-Ball" data-description="Le Volley-Ball sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="7" data-image="./asset/img7.jpg" data-id="7" data-title="Volley-Ball" data-description="Le Volley-Ball sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img7.jpg" alt="">
                         <figcaption>
@@ -99,7 +99,7 @@
                         </figcaption>
                 </figure>
             </li>
-            <li data-id="" data-image="./asset/img8.jpg" data-title="Skateboard" data-description="Le Skateboard sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
+            <li data-id="8" data-image="./asset/img8.jpg" data-title="Skateboard" data-description="Le Skateboard sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img8.jpg" alt="">
                         <figcaption>

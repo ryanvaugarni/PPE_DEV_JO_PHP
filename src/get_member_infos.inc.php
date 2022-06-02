@@ -14,7 +14,7 @@
         foreach ($_donnees as $_user) 
         {
 
-            echo "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span></h2>";
+            print  "<h2 class='hello'> Bienvenue  <span>".$_user['firstname'].  " "  .$_user['lastname']."</span></h2>";
             
 
             print
@@ -36,5 +36,6 @@
                         .'<td>'.$_user['city'].'</td>'
                     .'</tr>'
                 .'</table>';
-        }}
+        }
+    }
 ?>
