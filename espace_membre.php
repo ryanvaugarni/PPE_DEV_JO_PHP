@@ -20,7 +20,7 @@
         <?php include_once "./src/get_member_inscription.inc.php";?>
     </section>
     <br>
-
+    <br>
     <fieldset>
     <legend>Choisissez l'évènement auquel vous voulez y assister</legend>
         <ul class="grid-picture-large">
@@ -113,13 +113,11 @@
                 </figure>
             </li>    
         </ul>
-    </fieldset>
-        
+    </fieldset>  
     </main>
     <footer>
         <p>&copy; - Maison des Ligues - Ryan Vaugarni - 2022</p>
     </footer>
-    
     <!-- modale -->
     <div class="parent-modale" role="dialog">
         <figure class="modale">
@@ -130,7 +128,7 @@
             <figcaption class="desc">
                 <h3>title</h3>
                 <p>
-                   
+   
                 </p>
                 <time>Years : </time>
                 <br>
@@ -138,9 +136,7 @@
                     <input type="submit" name="signUp" value="S'inscrire à l'évenement" class="connexion">
                 </form>
             </figcaption>
-        </figure>
-
-        
+        </figure> 
     </div>
     <script src="./js/app.js"></script>
 </body>

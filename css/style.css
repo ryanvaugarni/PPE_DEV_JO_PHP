@@ -34,17 +34,12 @@ button,input,select{
     border:0;
     background-color:transparent;
     font-size: inherit;
-
 }
-
 figure button span{
     padding-top: -0.5rem; 
     margin-top: 0.45rem;
     width: 3.45rem;
 }
-
-
-
 /* scroll bars */
 *{
     /* For FF and non-webkit browsers */
@@ -155,8 +150,9 @@ ul figure .material-icons{
     -ms-transform: translateY(0.1rem);
     -o-transform: translateY(0.1rem);
 }
-.connexion::before{
+div figure form input::before{
     content: url('../asset/sinscrire.png');
+
     position: absolute;
     margin-left: -2.2rem;
     transform: translateY(0.1rem);
@@ -236,7 +232,7 @@ th, tr, td{
     padding: 1rem;
 }
 table{
-    width: 50%;
+    width: 80rem;
     margin: 0 auto;
     border-collapse: collapse;
     border-spacing: 0;
@@ -340,17 +336,18 @@ main a{
     color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
-div figure a{
+div figure form input{
     padding: 1rem;
     background-color: #6599CC;
     margin: 1rem auto;
     display: block;
+    cursor: pointer;
     max-width: 25rem;
     text-align: center;
     color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
-div figure a:hover{
+div figure form input:hover{
     background-color: #4991d9;
 }
 main button{
@@ -371,7 +368,7 @@ footer p{
     color: #fff;
     text-align: center;
     line-height: 5rem;
-    width: 50%;
+    width: 80rem;
     background-color: var(--color-warning);
     margin: 2rem auto -1rem;
     border-radius: 1rem;

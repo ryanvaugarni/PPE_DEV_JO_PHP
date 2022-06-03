@@ -10,38 +10,14 @@
     $_req -> execute(array(
         'idUser' => $_idUser
     ));
-    // if ($_req->rowCount()>0)
-    // {
-    //     $_donnees = $_req->fetchAll();
-    //     foreach ($_donnees as $_history) 
-    //     {
-    //         print
-    //         '<h2> Voici vos inscriptions : </h2>' 
-    //         .'<br>'.
-    //             '<table>'
-    //                 .'<tr>'
-    //                     .'<th>Evenement</th>'
-    //                     .'<th>Date Inscription</th>'
-    //                     .'<th>Date Evenements</th>'
-    //                 .'</tr>'
-    //                 .'<tr>'
-    //                     .'<td>'.$_history['nom_evenement'].'</td>'
-    //                     .'<td>'.$_history['desc_evenement'].'</td>'
-    //                     .'<td>'.$_history['date_consultation'].'</td>'
-    //                 .'</tr>'
-    //             .'</table>';
-    //     }
-    // }
-    
-           
 
-    echo "<h2Voici vos inscriptions :></h2>";
+    echo "<h2>Voici vos inscriptions :</h2>";
     echo "<br>";
     echo "<table>";
     echo "<tr>";
     echo "<th>Evenement</th>";
-    echo "<th>Date Inscription</th>";
-    echo "<th>Date Evenements</th>";
+    echo "<th>Description évènement</th>";
+    echo "<th>Date d'inscription</th>";
     echo "</tr>";
     if ($_req->rowCount()>0){
         $_donnees = $_req->fetchAll();
