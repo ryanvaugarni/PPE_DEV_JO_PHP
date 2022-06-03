@@ -132,7 +132,7 @@
                 <time>Years : </time>
                 <br>
                 <form action="#" method="POST">
-                    <input type="submit" name="signUp" value="S'inscrire à l'évenement" class="connexion">
+                    <input type="submit" name="signUp" value="S'inscrire à l'évènement" class="connexion">
                 </form>
             </figcaption>
         </figure> 
