@@ -1,6 +1,7 @@
 <?php
 //session_start();
     include_once "./src/head.inc.php";
+    
 ?>
 <body>
     <header>
@@ -14,6 +15,7 @@
         <section>
         <?php include_once "./src/get_member_infos.inc.php";?>
         </section>
+        <?php include_once './src/get_history_user.inc.php';?>
         <section>
         <?php include_once "./src/get_member_inscription.inc.php";?>
     </section>
@@ -132,9 +134,13 @@
                 </p>
                 <time>Years : </time>
                 <br>
-                <a class="connexion" href="">S'inscrire à l'évènement</a>
+                <form action="#" method="POST">
+                    <input type="submit" name="signUp" value="S'inscrire à l'évenement" class="connexion">
+                </form>
             </figcaption>
         </figure>
+
+        
     </div>
     <script src="./js/app.js"></script>
 </body>

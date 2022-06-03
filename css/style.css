@@ -34,7 +34,17 @@ button,input,select{
     border:0;
     background-color:transparent;
     font-size: inherit;
+
 }
+
+figure button span{
+    padding-top: -0.5rem; 
+    margin-top: 0.45rem;
+    width: 3.45rem;
+}
+
+
+
 /* scroll bars */
 *{
     /* For FF and non-webkit browsers */
