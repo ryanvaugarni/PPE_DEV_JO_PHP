@@ -10,7 +10,6 @@
     $_req -> execute(array(
         'idUser' => $_idUser
     ));
-
     echo "<h2>Voici vos inscriptions :</h2>";
     echo "<br>";
     echo "<table>";
