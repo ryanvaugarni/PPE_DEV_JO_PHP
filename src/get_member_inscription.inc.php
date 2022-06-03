@@ -2,7 +2,6 @@
     include_once './src/pdo.php';
 
     $_idUser = $_SESSION['id'];
-    
     $_req = $bdd->prepare("SELECT nom_evenement, desc_evenement, date_consultation 
     FROM historique_client 
     INNER JOIN evenement ON historique_client.id_event = evenement.id_event 
@@ -35,6 +34,6 @@
     }
     else 
     {
-        print "<p class='warning'>Nous n'avez pas encore consulter d'évènement </p>";
+        print "<p class='warning'>Vous vous êtes inscrit à aucun évènement </p>";
     }
 ?>

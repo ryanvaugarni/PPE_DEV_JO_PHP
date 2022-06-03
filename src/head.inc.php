@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once "./src/get_history_user.php";
     class User {
         static $_title = "- Maison des ligues - ";
         public $_css = "./css/style.css";

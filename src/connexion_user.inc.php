@@ -16,6 +16,11 @@ if(isset($_POST['submit_co'])){
         $usersInfoss = $checkIfUserExistss->fetch();
 
             $_SESSION['email'] = $usersInfoss['email'];
+            $_SESSION['lastname'] = $usersInfoss['lastname'];
+            $_SESSION['firstname'] = $usersInfoss['firstname'];
+            $_SESSION['country'] = $usersInfoss['country'];
+            $_SESSION['city'] = $usersInfoss['city'];
+            $_SESSION['id'] = $usersInfoss['id'];
         if(($checkIfUserExistss->rowCount() > 0) && ($user_mailss == $usersInfoss['email']))
         {   
             echo "<p class='success'>Vous avez rentré un email valide </p>";

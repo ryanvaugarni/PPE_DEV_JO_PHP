@@ -26,8 +26,8 @@ a{
 :root{
     --color-default: rgb(250, 240, 240);
     --color-primary: #2b7dc0;
-    --color-warning: #e23131;
-    --color-success: #4db32e;
+    --color-warning: #c73232;
+    --color-success: #479e2c;
 }
 button,input,select{
     padding:0;
@@ -301,6 +301,8 @@ h3{
     right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
+    background-color: #222;
+    border-radius: 0.5rem;
     color: rgb(248, 247, 247);
     cursor: pointer;
 }

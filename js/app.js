@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", e => {
         document.querySelector(".modale .desc p").innerHTML = `<strong>Déscription : </strong>${desc}`;
         document.querySelector(".modale .desc time").innerText = `Annee ${dates}`;
         document.querySelector(".modale .desc time").setAttribute("datetime", dates);
-        document.querySelector(".connexion").setAttribute("href", "id_event="+idSport);
+        document.querySelector(".connexion").setAttribute("href", "/espace-membre.php/id_event="+idSport);
         let btn = document.querySelector(".connexion");
         btn.addEventListener("click", (e) => {
             e.preventDefault();
-            window.history.pushState(1, "", "/PPE_DEV_JO_PHP/espace-membre.php?id_event=" + idSport);
+            window.history.pushState(1, "", "./espace_membre.php?id_event=" + idSport);
         });
 
     };
