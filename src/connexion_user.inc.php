@@ -1,4 +1,7 @@
 <?php
+
+// code qui permet de récupérer les données de la base de données pour pouvoir se connecter à l'espace membre
+
 session_start();
 include_once ('./src/pdo.php');
 
@@ -6,7 +9,7 @@ if(isset($_POST['submit_co'])){
    
    if(!empty($_POST['email_co'])  && !empty($_POST['mdp_co']))
  {
-//         //User's DATAS.
+        //User's DATAS.
         $user_mailss = htmlspecialchars($_POST['email_co']);
         $user_passwordss = htmlspecialchars($_POST['mdp_co']);
         
@@ -15,12 +18,13 @@ if(isset($_POST['submit_co'])){
 
         $usersInfoss = $checkIfUserExistss->fetch();
 
-            $_SESSION['email'] = $usersInfoss['email'];
-            $_SESSION['lastname'] = $usersInfoss['lastname'];
-            $_SESSION['firstname'] = $usersInfoss['firstname'];
-            $_SESSION['country'] = $usersInfoss['country'];
-            $_SESSION['city'] = $usersInfoss['city'];
-            $_SESSION['id'] = $usersInfoss['id'];
+        $_SESSION['email'] = $usersInfoss['email'];
+        $_SESSION['lastname'] = $usersInfoss['lastname'];
+        $_SESSION['firstname'] = $usersInfoss['firstname'];
+        $_SESSION['country'] = $usersInfoss['country'];
+        $_SESSION['city'] = $usersInfoss['city'];
+        $_SESSION['id'] = $usersInfoss['id'];
+
         if(($checkIfUserExistss->rowCount() > 0) && ($user_mailss == $usersInfoss['email']))
         {   
             echo "<p class='success'>Vous avez rentré un email valide </p>";

@@ -1,4 +1,7 @@
 <?php 
+
+// code qui permet de récupérer le firstname et le lastname de l'utilisateur connecté et d'afficher ses infos dans un tableau
+
     include_once './src/pdo.php';
 
     $_emailUser = $_SESSION['email'];

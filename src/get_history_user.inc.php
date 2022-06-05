@@ -1,4 +1,7 @@
 <?php
+
+// code qui permet de séléctionner les données de l'evevement dans la base de données pour savoir si l'évènement est dispo ou non
+
 include_once './src/pdo.php';
 
 if (isset($_GET["id_event"]) && isset($_SESSION["id"])) {

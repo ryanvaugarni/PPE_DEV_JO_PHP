@@ -1,4 +1,7 @@
 <?php
+
+// code qui permet d'envoyer les données d'inscription dans la base de données
+
 session_start();
 include './src/pdo.php';
 

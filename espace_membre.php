@@ -12,12 +12,15 @@
     <br>
     <main>
         <section>
+        <!-- récupère les infos de l'user et affiche son prénom et son nom à la connexion et affiche ses infos dans un tableau -->
         <?php include_once "./src/get_member_infos.inc.php";?>
         </section>
+        <!-- récupère les infos de l'inscription à un évènement et affiche si l'évènement est dispo ou non -->
         <?php include_once './src/get_history_user.inc.php';?>
         <section>
+        <!-- récupère les infos d'inscription à un évènement et les affiche dans un tableau -->
         <?php include_once "./src/get_member_inscription.inc.php";?>
-    </section>
+        </section>
     <br>
     <br>
     <fieldset>

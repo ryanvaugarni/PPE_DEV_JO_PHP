@@ -1,4 +1,7 @@
 <?php 
+
+// code qui permet de récupérer les données d'inscription aux evenements et de les afficher dans un tableau
+
     include_once './src/pdo.php';
     
     $_idUser = $_SESSION['id'];
@@ -7,6 +10,8 @@
     INNER JOIN evenement ON historique_client.id_event = evenement.id_event 
     WHERE historique_client.idClient = :idUser
     GROUP BY nom_evenement ORDER BY historique_client.date_consultation DESC LIMIT 5");
+    
+    // execution dans un tableau pour éviter les injections sql
     $_req -> execute(array(
         'idUser' => $_idUser
     ));
