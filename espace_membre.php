@@ -12,7 +12,7 @@
         <section>
         <!-- récupère les infos de l'user et affiche son prénom et son nom à la connexion et affiche ses infos dans un tableau -->
         <?php include_once "./src/get_member_infos.inc.php";?>
-        <a class="account" href="./src/account.php">Modifier mes informations</a>
+        <a class="account" href="./account.php">Modifier mes informations</a>
         </section>
         <!-- récupère les infos de l'inscription à un évènement et affiche si l'évènement est dispo ou non -->
         <?php include_once './src/get_history_user.inc.php';?>
