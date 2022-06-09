@@ -35,7 +35,7 @@
         }
     }
         else{
-            print "<p class='warning'>Vous vous êtes inscrit à aucun évènement </p>";
+            print "<p class='warning'>Vous n'êtes inscrit à aucun évènement </p>";
 
         }
     

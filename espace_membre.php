@@ -113,7 +113,51 @@
                             </h2>
                         </figcaption>
                 </figure>
-            </li>    
+            </li> 
+            <li data-id="9" data-image="./asset/img9.jpg" data-title="Cyclisme" data-description="Le Cyclisme sera en rendez-vous des JO 2024" data-dates=": 10/01/2024">
+                <figure>
+                    <img src="./asset/img9.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="10" data-image="./asset/img10.jpg" data-title="VTT" data-description="Le VTT sera en rendez-vous <br> des JO 2024" data-dates=": 11/01/2024">
+                <figure>
+                    <img src="./asset/img10.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="11" data-image="./asset/img11.jpg" data-title="Badminton" data-description="Le Badminton sera en rendez-vous des<br> JO 2024" data-dates=": 12/01/2024">
+                <figure>
+                    <img src="./asset/img11.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="12" data-image="./asset/img12.jpg" data-title="Handisport" data-description="Le Handisport sera en rendez-vous des JO <br>2024" data-dates=": 13/01/2024">
+                <figure>
+                    <img src="./asset/img12.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>   
         </ul>
     </fieldset>  
     </main>
@@ -140,6 +184,7 @@
             </figcaption>
         </figure> 
     </div>
+    <script src="https://kit.fontawesome.com/1230b36ec9.js" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ if (isset($_GET["id_event"]) && isset($_SESSION["id"])) {
 }
 else
 {
-    echo "<p class=\"warning\">Vous avez déjà inscrit à cet évènement</p>";
+    echo "<p class=\"warning\">Vous vous êtes déjà inscrit à cet évènement</p>";
 }}
 
 ?>

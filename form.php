@@ -13,7 +13,7 @@ session_start();
         <br>
         <h2>Vous êtes tombés sur la bonne page, l'inscription se passe tout en bas</h2>
         <br>
-        <p>Rejoins le club des JO 2024, n'attendez plus, vous ne serez pas déçu</p>
+        <p>Rejoins le club de la MDL pour avoir accès aux inscriptions des évènements, n'attendez plus!</p>
             <br>
     </section>
     <a class="return" href="index.php">Retour</a>

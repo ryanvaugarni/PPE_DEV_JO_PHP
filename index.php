@@ -11,10 +11,9 @@ session_start();
     <br>
     <main>
         <section>
-            <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+            <h2>Prêt à la compétition? Les JO 2024 arrivent à grand pas</h2>
             <br>
-            <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
-                prochain on vous propose tous les sports qui seront diffusés pendant les JO de Paris 2024 sur vos support préférés
+            <p>Le club de la MDL est la pour que vous puissiez vous inscrire aux évènements porposés pendant les JO afin d'avoir les places en exclusivité.
                 <br>
                 <br>
             Alors ne tardez plus inscrivez-vous !
@@ -121,7 +120,7 @@ session_start();
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img10.jpg" data-title="Vélo en montagne" data-description="Le vélo en montagne sera en rendez-vous <br> des JO 2024" data-dates=": 02/01/2020">
+            <li data-image="./asset/img10.jpg" data-title="VTT" data-description="Le VTT sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img10.jpg" alt="">
                         <figcaption>
@@ -132,7 +131,7 @@ session_start();
                         </figcaption>
                 </figure>
             </li>
-            <li data-image="./asset/img11.jpg" data-title="Badmington" data-description="Le Badmington sera en rendez-vous des<br> JO 2024" data-dates=": 02/01/2020">
+            <li data-image="./asset/img11.jpg" data-title="Badminton" data-description="Le Badmington sera en rendez-vous des<br> JO 2024" data-dates=": 02/01/2020">
                 <figure>
                     <img src="./asset/img11.jpg" alt="">
                         <figcaption>

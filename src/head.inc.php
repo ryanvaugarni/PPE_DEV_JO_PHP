@@ -19,5 +19,6 @@ include_once "./src/get_history_user.php";
     <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<?= $_new_css->_css ?>">
 </head>
