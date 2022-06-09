@@ -1,10 +1,8 @@
 <?php
-    include_once "./src/head.inc.php";
-    
+    include_once "./src/head.inc.php"; 
 ?>
 <body>
     <header>
-        
         <img alt="icon" src="./asset/olympique.png">
         <h1>JO - Espace Membre</h1>
         <a class="deco" href="./src/deconnexion.php">Déconnexion</a>
@@ -14,6 +12,7 @@
         <section>
         <!-- récupère les infos de l'user et affiche son prénom et son nom à la connexion et affiche ses infos dans un tableau -->
         <?php include_once "./src/get_member_infos.inc.php";?>
+        <a class="account" href="./src/account.php">Modifier mes informations</a>
         </section>
         <!-- récupère les infos de l'inscription à un évènement et affiche si l'évènement est dispo ou non -->
         <?php include_once './src/get_history_user.inc.php';?>
@@ -157,7 +156,51 @@
                             </h2>
                         </figcaption>
                 </figure>
-            </li>   
+            </li>
+            <li data-id="13" data-image="./asset/img13.jpg" data-title="Equitation" data-description="L'Equitation sera en rendez-vous des JO<br> 2024" data-dates=": 14/01/2024">
+                <figure>
+                    <img src="./asset/img13.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="14" data-image="./asset/img14.jpg" data-title="Tir à l'arc" data-description="Le tir à l'arc sera en rendez-vous des JO<br> 2024" data-dates=": 15/01/2024">
+                <figure>
+                    <img src="./asset/img14.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="15" data-image="./asset/img15.jpg" data-title="L'Escrime" data-description="L'Escrime sera en rendez-vous des JO 2024" data-dates=": 16/01/2024">
+                <figure>
+                    <img src="./asset/img15.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
+            <li data-id="16" data-image="./asset/img16.jpg" data-title="Rugby" data-description="Le Rugby sera en rendez-vous des JO 2024" data-dates=": 17/01/2024">
+                <figure>
+                    <img src="./asset/img16.jpg" alt="">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">pages</i>
+                                    Agrandir
+                            </h2>
+                        </figcaption>
+                </figure>
+            </li>
         </ul>
     </fieldset>  
     </main>
@@ -184,7 +227,6 @@
             </figcaption>
         </figure> 
     </div>
-    <script src="https://kit.fontawesome.com/1230b36ec9.js" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
