@@ -1,19 +1,21 @@
 <?php
     include_once "./src/head.inc.php"; 
     include_once "./src/pdo.php";
+    include_once "./src/modification_user.inc.php";
 ?>
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
         <h1>JO - Mon Compte</h1>
+        <a class="deco" href="./espace_membre.php">Espace Membre</a>
     </header>
     <br>
     <main>
       <?php
       $_idUser = $_SESSION['id'];
       $_emailUser = $_SESSION['email'];
-    $_nom = $_SESSION['lastname'];
-      $_req = $bdd->prepare("SELECT firstname, lastname, email, country, city FROM client WHERE id = :idUser");
+      $_nom = $_SESSION['lastname'];
+      $_req = $bdd->prepare("SELECT * FROM client WHERE id = :idUser");
         $_req -> execute(array(
             'idUser' => $_idUser
         ));
@@ -21,28 +23,25 @@
         {
             foreach ($_donnees as $_user){
                 print
-                    '<form method="post" action="src/update_member.php" class="container">' .
-                    '<h3> Modifier votre compte '.$_user['firstname'].' '.$_user['lastname'].'</h3>' .
+                    '<form method="post" action="#" class="container">' .
+                    '<h3> Modification de votre compte</h3>' .
                     '<div class="form-element" role="form"' .
                         '<label for="firstname">Prénom : </label>' .
                         '<input type="text" name="firstname" class="floating-label" id="firstname" value="'.$_user['firstname'].'" required>' .
-                        '<br>' .
                         '<label for="lastname">Nom : </label>' .
                         '<input type="text" name="lastname" class="floating-label" id="lastname" value="'.$_user['lastname'].'" required>' .
-                        '<br>' .
                         '<label for="email">Email : </label>' .
                         '<input type="email" name="email" class="floating-label" id="email" value="'.$_user['email'].'" required>' .
-                        '<br>' .
+                        '<label for="passwords">Mot de passe : </label>' .
+                        '<input type="password" name="passwords" class="floating-label" id="passwords" value="'.$_user['passwords'].'" required>' .
                         '<label for="country">Pays : </label>' .
                         '<input type="text" name="country" class="floating-label" id="country" value="'.$_user['country'].'" required>' .
-                        '<br>' .
                         '<label for="city">Ville : </label>' .
                         '<input type="text" name="city" class="floating-label" id="city" value="'.$_user['city'].'" required>' .
-                        '<br>' .
-                        '<input type="submit" class="btn-sign-in" value="Modifier">'
+                        '<input type="submit" name="modifier" class="btn-sign-in" value="Modifier">'
                     .'</form>';
             }
-        }
+        } 
       ?>
     </main>
     <footer>
