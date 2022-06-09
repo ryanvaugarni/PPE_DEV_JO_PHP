@@ -11,7 +11,7 @@ session_start();
 <main>
     <section>
         <br>
-        <h2>Vous êtes tombés sur la bonne page la conncexion se passe tout en bas </h2>
+        <h2>Vous êtes tombés sur la bonne page la connexion se passe tout en bas </h2>
         <br>
         <p>Tous les mois profitez de toutes les nouveauts série et cinéma. A partir du mois
             prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
