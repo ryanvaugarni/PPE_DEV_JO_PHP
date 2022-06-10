@@ -38,6 +38,7 @@
             // change the password of the user in the database if the password is not empty & if the password is different from the current one
             case ($passwords != $_SESSION['passwords']):
                 $q = $bdd->prepare("UPDATE client SET passwords = :passwords WHERE id = :id");
+                $passwords = password_hash($passwords, PASSWORD_BCRYPT);
                 $q->execute(array('passwords' => $passwords,
                                   'id' => $_SESSION['id']
                 ));
@@ -60,7 +61,12 @@
                 $_SESSION['city'] = $city;
                 break;
             }
-    }
+            if ($_req) {
+                print "<section>
+                <p class=\"success\"> Vos informations ont bien été modifiées </p>";
+                print "<a href=\"espace_membre.php\"> Retour à l'espace membre </a>
+                </section>";
+    }}
 
     // if(isset($_POST['modifier'])){
     //     $firstname = $_POST['firstname'];
