@@ -64,7 +64,7 @@
             if ($_req) {
                 print "<section>
                 <p class=\"success\"> Vos informations ont bien été modifiées </p>";
-                print "<a href=\"espace_membre.php\"> Retour à l'espace membre </a>
+                print "<a href=\"login.php\"> Retour à l'espace membre </a>
                 </section>";
     }}
 

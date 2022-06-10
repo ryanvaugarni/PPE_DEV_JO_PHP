@@ -23,8 +23,8 @@
         {
             foreach ($_donnees as $_user){
                 print
-                    '<form method="post" action="#" class="container">' .
-                    '<h3> Modification de votre compte</h3>' .
+                    '<form method="post" action="./src/modification_user.inc.php" class="container">' .
+                    '<h3>Editer votre profil</h3>' .
                     '<div class="form-element" role="form"' .
                         '<label for="firstname">Prénom : </label>' .
                         '<input type="text" name="firstname" class="floating-label" id="firstname" value="'.$_user['firstname'].'" required>' .
