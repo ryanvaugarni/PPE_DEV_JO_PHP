@@ -6,6 +6,7 @@
         <img alt="icon" src="./asset/olympique.png">
         <h1>MDL - Espace Membre</h1>
         <a class="deco" href="./src/deconnexion.php">Déconnexion</a>
+        <!-- <h2 class="bvn">Bienvenue  //<php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']; ?></h2> -->
     </header>
     <br>
     <main>
