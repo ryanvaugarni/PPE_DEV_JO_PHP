@@ -17,10 +17,10 @@ if(isset($_POST['submit_co'])){
         $checkIfUserExistss->execute(array($user_mailss));
 
         $usersInfoss = $checkIfUserExistss->fetch();
-
-        $_SESSION['email'] = $usersInfoss['email'];
-        $_SESSION['lastname'] = $usersInfoss['lastname'];
         $_SESSION['firstname'] = $usersInfoss['firstname'];
+        $_SESSION['lastname'] = $usersInfoss['lastname'];
+        $_SESSION['email'] = $usersInfoss['email'];
+        $_SESSION['passwords'] = $usersInfoss['passwords'];
         $_SESSION['country'] = $usersInfoss['country'];
         $_SESSION['city'] = $usersInfoss['city'];
         $_SESSION['id'] = $usersInfoss['id'];

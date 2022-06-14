@@ -23,7 +23,7 @@
         {
             foreach ($_donnees as $_user){
                 print
-                    '<form method="post" action="./src/modification_user.inc.php" class="container">' .
+                    '<form method="post" action="#" class="container">' .
                     '<h3>Editer votre profil</h3>' .
                     '<div class="form-element" role="form"' .
                         '<label for="firstname">Prénom : </label>' .
@@ -38,7 +38,7 @@
                         '<input type="text" name="country" class="floating-label" id="country" value="'.$_user['country'].'" required>' .
                         '<label for="city">Ville : </label>' .
                         '<input type="text" name="city" class="floating-label" id="city" value="'.$_user['city'].'" required>' .
-                        '<input type="submit" name="modifier" class="btn-sign-in" value="Modifier">'
+                        '<input type="submit" name="change" class="btn-sign-in" value="Modifier">'
                     .'</form>';
             }
         } 
