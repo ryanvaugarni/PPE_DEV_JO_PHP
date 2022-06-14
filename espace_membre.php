@@ -4,7 +4,7 @@
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>JO - Espace Membre</h1>
+        <h1>MDL - Espace Membre</h1>
         <a class="deco" href="./src/deconnexion.php">Déconnexion</a>
     </header>
     <br>

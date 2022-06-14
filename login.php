@@ -5,7 +5,7 @@ session_start();
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>JO - Connexion</h1>
+        <h1>MDL - Connexion</h1>
         
 </header>
 <main>

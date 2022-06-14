@@ -6,7 +6,7 @@
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>JO - Mon Compte</h1>
+        <h1>MDL - Mon Compte</h1>
         <a class="deco" href="./espace_membre.php">Espace Membre</a>
     </header>
     <br>

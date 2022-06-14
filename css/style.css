@@ -239,14 +239,14 @@ ul figure:hover figcaption{
 /* Table d'informations. */
 th, tr, td{
     border: solid .1rem #fff;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 table{
     width: 80rem;
     margin: 0 auto;
     border-collapse: collapse;
     border-spacing: 0;
-    background-color: #222;
+    background-color: rgb(58, 101, 121);
     border: solid .1rem #fff;
     color: #fff;
     font-size: 2rem;

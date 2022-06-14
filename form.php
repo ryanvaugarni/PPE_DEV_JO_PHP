@@ -5,7 +5,7 @@ session_start();
 <body>
     <header>
         <img alt="icon" src="./asset/olympique.png">
-        <h1>JO - Inscription</h1>
+        <h1>MDL - Inscription</h1>
         <a class="connect" href="./login.php">Connexion</a>
 </header>
 <main>
