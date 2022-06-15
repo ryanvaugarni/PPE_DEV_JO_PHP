@@ -80,7 +80,22 @@ session_start();
             <label for="nom">Email :</label>
             <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
             <label for="nom">Mot de passe :</label>
-            <input type="password" name="passwords" class="floating-label" placeholder="Votre mot de passe" aria-required="true">
+            <input type="password" id="motdepasse" name="passwords" class="floating-label" placeholder="Votre mot de passe" aria-required="true">
+            <input class="box" type="checkbox" onclick="Afficher()">
+            <script>
+                function Afficher()
+                { 
+                    var input = document.getElementById("motdepasse"); 
+                    if (input.type === "password")
+                    {
+                        input.type = "text";
+                    }
+                    else
+                    {
+                        input.type = "password";
+                    }
+                } 
+            </script>
             <label for="nom">Pays :</label>
             <input type="text" name="country" class="floating-label name" placeholder="France..." aria-required="true">
             <label for="nom">Ville :</label>

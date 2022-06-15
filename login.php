@@ -77,7 +77,22 @@ session_start();
             <label for="login">Email</label>
             <input type="email" name="email_co" class="floating-label" placeholder="Email" aria-required="true">
             <label for="password">Mot de passe</label>
-            <input type="password" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <input type="password" id="motdepasse" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <input class="box" type="checkbox" onclick="Afficher()">
+            <script>
+                function Afficher()
+                { 
+                    var input = document.getElementById("motdepasse"); 
+                    if (input.type === "password")
+                    {
+                        input.type = "text";
+                    }
+                    else
+                    {
+                        input.type = "password";
+                    }
+                } 
+            </script>
             <input type="submit" name="submit_co" class="btn-sign-in" value="Se Connecter">
             <br>
             <p>Vous n'avez pas de compte ?<a href="form.php">Inscrivez-vous ici</a></p>
