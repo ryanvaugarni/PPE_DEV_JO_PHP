@@ -74,10 +74,11 @@ session_start();
             <br>
             <p class="warning"></p>
             <div class="form-element" role="form">
-            <label for="login">Email</label>
-            <input type="email" name="email_co" class="floating-label" placeholder="Email" aria-required="true">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="motdepasse" name="mdp_co" class="floating-label" placeholder="Mot de passe" aria-required="true">
+            <label for="login">Email :</label>
+            <input type="email" name="email_co" class="floating-label" placeholder="Votre email" aria-required="true">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="motdepasse" name="mdp_co" class="floating-label" placeholder="Votre mot de passe" aria-required="true">
+            <label for="motdepasse">Afficher le mot de passe :</label>
             <input class="box" type="checkbox" onclick="Afficher()">
             <script>
                 function Afficher()

@@ -78,9 +78,10 @@ session_start();
             <label for="nom">Nom :</label>
             <input type="text" name="lastname" class="floating-label name" placeholder="Nom de famille" aria-required="true">
             <label for="nom">Email :</label>
-            <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
+            <input type="email" name="email" class="floating-label" placeholder="Votre email" aria-required="true">
             <label for="nom">Mot de passe :</label>
             <input type="password" id="motdepasse" name="passwords" class="floating-label" placeholder="Votre mot de passe" aria-required="true">
+            <label for="motdepasse">Afficher le mot de passe :</label>
             <input class="box" type="checkbox" onclick="Afficher()">
             <script>
                 function Afficher()
