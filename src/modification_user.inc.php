@@ -1,7 +1,7 @@
 <?php
     include_once './src/pdo.php';
 
-    if (isset($_POST) && isset($_SESSION['firstname']) && isset($_SESSION['lastname']) && isset($_SESSION['email']) && isset($_SESSION['passwords']) && isset($_SESSION['country']) && isset($_SESSION['city'])) {
+    if (isset($_POST['change']) && isset($_SESSION['firstname']) && isset($_SESSION['lastname']) && isset($_SESSION['email']) && isset($_SESSION['passwords']) && isset($_SESSION['country']) && isset($_SESSION['city'])) {
         $id = $_SESSION['id'];
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
@@ -61,11 +61,8 @@
                 $_SESSION['city'] = $city;
                 break;
             }
-            if ($_req) {
-                print "<section>
-                <p class=\"success\"> Vos informations ont bien été modifiées </p>";
-                print "<a href=\"login.php\"> Retour à l'espace membre </a>
-                </section>";
+            if (isset($_POST['change'])) {
+                header('Location: ./espace_membre.php');
     }}
 
     // if(isset($_POST['modifier'])){
