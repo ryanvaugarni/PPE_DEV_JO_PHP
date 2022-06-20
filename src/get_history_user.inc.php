@@ -28,6 +28,7 @@ if (isset($_GET["id_event"]) && isset($_SESSION["id"])) {
         'date_consultation' => $_date
 
     ));
+ $_SESSION['idevent'] = $_idEvenement;
 }
 else
 {
