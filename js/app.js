@@ -42,4 +42,5 @@ document.addEventListener("DOMContentLoaded", e => {
     closed_all.addEventListener("click", () => {
         modal.classList.remove("modale-active");
     });
+    
 });
