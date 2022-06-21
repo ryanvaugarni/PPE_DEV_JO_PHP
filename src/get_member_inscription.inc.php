@@ -6,9 +6,9 @@ session_start();
     include_once './src/pdo.php';
     
     $_idEvent = (int) $_SESSION['idevent'];
-    var_dump($_idEvent);
+    //var_dump($_idEvent);
     $_idUser = $_SESSION['id'];
-    var_dump($_idUser);
+    //var_dump($_idUser);
     $_req = $bdd->prepare("SELECT nom_evenement, desc_evenement, date_consultation, historique_client.idClient, historique_client.id_event 
                            FROM historique_client 
                            INNER JOIN evenement 
