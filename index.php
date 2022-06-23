@@ -19,6 +19,9 @@ session_start();
             Alors ne tardez plus inscrivez-vous !
             </p>
         </section>
+        <section>
+            <?php include_once "./src/statclient_inc.php" ?>
+        </section>
         <br>
         <ul class="grid-picture-large">
             <li data-image="./asset/img1.jpg" data-title="Boxe" data-description="La boxe sera en rendez-vous des JO 2024" data-dates=": 02/01/2020">
