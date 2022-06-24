@@ -19,4 +19,8 @@
         print  "<h2 class='hello'> Vous êtes aujourd'hui <span>".$_donnees['NB'].  " " ."</span> personnes inscrites sur la plateforme</h2>";
         }
     }
+    else
+    {
+        print "Erreur";
+    }
 ?>
