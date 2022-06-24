@@ -16,7 +16,7 @@
         //var_dump($_donnees);
         foreach ($_donnees as $_id) 
         {
-        print  "<h2 class='hello'> Vous êtes aujourd'hui <span>".$_donnees['NB'].  " "."</span> personnes inscrites sur la plateforme</h2>";
+        print  "<h2 class='hello'> Vous êtes aujourd'hui <span>".$_donnees['NB'].  " " ."</span> personnes inscrites sur la plateforme</h2>";
         }
     }
 ?>
